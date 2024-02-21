@@ -42,6 +42,7 @@ private:
 	std::vector<BehaviorNode*> behaviors;
 
 public:
+	//“ü‚Á‚Ä‚¢‚é‚à‚Ì‚ð‘S•”Á‚·
 	~Selector() {
 		for (auto behavior : behaviors) {
 			delete behavior;
@@ -52,6 +53,7 @@ public:
 		behaviors.push_back(behavior);
 	}
 
+	//ŽÀs
 	void Execute() override {
 		for (auto behavior : behaviors) {
 			behavior->Execute();
